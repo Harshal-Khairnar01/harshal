@@ -1,0 +1,47 @@
+<input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa-solid fa-bars"></i>
+    </label>
+
+
+
+<nav class="header-main">
+    <div class="logo">
+        <img src="img/logo.png" alt="logo">
+    </div>
+
+    <ul>
+        <li>
+            <a href="/" 
+            <% if(page=="index" ){%> style="color:var(--o-col) !important; font-size:2.2rem"<% } %> ><i class="icon-h fas fa-house-damage"></i></a>
+                <span>Home</span>
+        </li>
+        <li>
+                <a href="/about"
+                <% if(page=="about" ){%> style="color:var(--o-col) !important; font-size:2.2rem"<% } %>
+                ><i class="icon-a fas fa-user-tie"></i></a>
+                <span>About</span>
+        </li>
+        <li>
+                <a href="/resume" 
+                <% if(page=="resume" ){%> style="color:var(--o-col) !important; font-size:2.2rem"<% } %>
+                ><i class="icon-r fas fa-address-book"></i></a>
+                <span>Resume</span>
+        </li>
+        <li>
+                <a href="/portfolio" 
+                <% if(page=="portfolio" ){%> style="color:var(--o-col) !important; font-size:2.3rem"<% } %>
+                ><i class="icon-p fas fa-briefcase"></i></a>
+                <span>Portfolio</span>
+        </li>
+
+        <li>
+                <a href="/contact" <% if(page=="contact" ){%> style="color:var(--o-col) !important; font-size:2.2rem"<% } %> ><i class="icon-c fas fa-envelope"></i></a>
+                <span>Contact</span>
+        </li>
+    </ul>
+
+
+</nav>
+
+

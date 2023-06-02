@@ -1,0 +1,55 @@
+<%- include('./partials/header.ejs',{title:"Harshal Khairnar"})%>
+    <div id="bodycon" class="bg1">
+        <%- include('./partials/nav.ejs',{page:"contact"})%>
+
+            <div id="cont-con" class="contact-pg">
+                <div class="head-con">
+                    <h1>Contact</h1>
+                    <h5><span class="headi">--</span>
+                        <i class="fa-solid fa-infinity headi">
+                        </i>
+                        <span class="headi">--</span>
+                    </h5>
+                </div>
+
+                <div id="form-con">
+                    <form method="post">
+                        <div class="input-g">
+                            <input type="text" for="name" name="uname" placeholder="Name*" onfocus="onfoceve(this)" onblur="onblureve(this)">
+                            <input type="email" for="email" name="email" placeholder="Email*" onfocus="onfoceve(this)" onblur="onblureve(this)">
+                        </div>
+                        <div class="input-g">
+                            <input type="text" for="msg" name="msg" placeholder="Your Message" class="textarea"onfocus="onfoceve(this)" onblur="onblureve(this)">
+                        </div>
+                        <div class="input-g fcenter">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="det-con">
+                    <div id="det">
+                        <h2>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </h2>
+                        <h3>harshalkhairnar7244@gmail.com</h3>
+                        <h4>Email</h4>
+                    </div>
+                    <div id="det">
+                        <h2>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </h2>
+                        <h3>Indore (M.P.)</h3>
+                        <h4>Address</h4>
+                    </div>
+                    <div id="det">
+                        <h2>
+                            <i class="fa-solid fa-phone"></i>
+                        </h2>
+                        <h3>(+91) 626 457 XXXX</h3>
+                        <h4>Phone</h4>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <%- include('./partials/footer.ejs')%>

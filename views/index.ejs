@@ -1,0 +1,52 @@
+<%- include('./partials/header.ejs',{title:"Harshal Khairnar"})%>
+    <div id="main-con" id="bodycon" class="bg1">
+        <%- include('./partials/nav.ejs',{page:"index"})%>
+
+            <div id="cont-con" class="homeContainer">
+                
+
+                <div id="name">
+                    <h1>Harshal Khairnar</h1>
+                    <h3>I am a <span id="chrole">Student</span></h3>
+                </div>
+
+                <ul id="so-icon">
+                    <li class="so-links">
+                        <a target="_blank" href="https://www.instagram.com/harshal.khairnar_/"><i class="fa-brands fa-instagram icon"></i></a>
+                    </li>
+                    <li class="so-links">
+                        <a target="_blank" href="https://www.linkedin.com/in/harshal-khairnar-a99611241/"><i class="fa-brands fa-linkedin-in icon"></i></a>
+                    </li>
+                    <li class="so-links">
+                        <a target="_blank" href="https://www.facebook.com/harshal.khairnar.984/"><i class="fa-brands fa-facebook-f icon"></i></a>
+                    </li>
+                    <li class="so-links">
+                        <a target="_blank" href="https://twitter.com/HarshalKha25502"><i class="fa-brands fa-twitter icon"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+    </div>
+    <script>
+
+
+        const mcon = document.getElementById("main-con");
+
+        const changebg = async () => {
+            await setInterval(() => {
+                mcon.classList.toggle('bg2')
+            }, 2500);
+
+        }
+        changebg();
+
+        setInterval(() => {
+            if (document.getElementById("chrole").innerText == "Student")
+                document.getElementById("chrole").innerText = "Fresher";
+            else
+                document.getElementById("chrole").innerText = "Student";
+        }, 1500);
+
+
+    </script>
+    <%- include('./partials/footer.ejs')%>
