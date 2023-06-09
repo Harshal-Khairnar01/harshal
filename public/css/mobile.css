@@ -1,5 +1,12 @@
+:root {
+    --w-col: #ffffff;
+    --p-col: #959794;
+    --s-col: #77756e;
+    --b-col: #0f0f0f;
+    --bb-col: black;
+    --o-col: #f6403a;
+}
 
-#77756e
 
 @media screen and (max-width: 1000px) {
 
